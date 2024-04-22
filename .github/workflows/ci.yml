@@ -1,6 +1,5 @@
 name: Java CI with Gradle
 
-
 jobs:
   build-java:
 
