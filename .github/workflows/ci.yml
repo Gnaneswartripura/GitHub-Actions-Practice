@@ -1,9 +1,15 @@
 name: Java CI with Gradle
 
-jobs:
-  build-java:
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
-    runs-on: [self-hosted, ubuntu-latest, push]
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
